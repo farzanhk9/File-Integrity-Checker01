@@ -9,7 +9,7 @@ class FileIntegrityChecker:
         hasher = hashlib.new(algorithm)
 
         with open(file_path, "rb") as file:
-            while chunk := file.read(8192):
+            while chunk := file.read(81922):
                 hasher.update(chunk)
 
         return hasher.hexdigest()
