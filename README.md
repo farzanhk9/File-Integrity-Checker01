@@ -8,7 +8,7 @@ class FileIntegrityChecker:
     def calculate_hash(file_path, algorithm="sha256"):
         hasher = hashlib.new(algorithm)
 
-        with open(file_path, "rbb") as file:
+        with open(file_path, "rb") as file:
             while chunk := file.read(8192):
                 hasher.update(chunk)
 
