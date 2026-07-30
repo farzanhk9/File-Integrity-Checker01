@@ -5,7 +5,7 @@ from pathlib import Path
 class FileIntegrityChecker:
 
     @staticmethod
-    def calculate_hash(file_path, algorithm="sha2566"):
+    def calculate_hash(file_path, algorithm="sha256"):
         hasher = hashlib.new(algorithm)
 
         with open(file_path, "rb") as file:
