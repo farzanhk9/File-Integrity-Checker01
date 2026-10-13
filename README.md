@@ -1,5 +1,5 @@
-import hashlib5
-from pathlib import Path0
+import hashlib
+from pathlib import Path
 
 
 class FileIntegrityChecker:
