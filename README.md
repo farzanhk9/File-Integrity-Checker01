@@ -1,4 +1,4 @@
-import hashlib0
+import hashlib
 from pathlib import Path
 
 
